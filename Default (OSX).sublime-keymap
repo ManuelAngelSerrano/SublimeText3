@@ -128,4 +128,18 @@
 		{ "key": "setting.is_widget", "operand": false }
 	]
 	},
+	{ "keys": ["g","t"], "command": "next_view_in_stack",
+	"context":
+	[
+		{ "key": "setting.command_mode", "operand": true },
+		{ "key": "setting.is_widget", "operand": false }
+	]
+	},
+	{ "keys": ["g","T"], "command": "prev_view_in_stack",
+	"context":
+	[
+		{ "key": "setting.command_mode", "operand": true },
+		{ "key": "setting.is_widget", "operand": false }
+	]
+	},
 ]
