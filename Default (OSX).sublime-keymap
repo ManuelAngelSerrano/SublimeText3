@@ -1,27 +1,12 @@
 [
 	// Steal open command and use it for iOpener.
-    { "keys": ["ctrl+x", "ctrl+f"], "command": "i_opener" },
-    //{ "keys": ["ctrl+x", "ctrl+f"], "command": "prompt_open_file" },
+  { "keys": ["ctrl+x", "ctrl+f"], "command": "i_opener" },
 	{ "keys": ["ctrl+º"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
-	//{ "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
-	//{ "keys": ["super+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },	
-	// { "keys": ["ctrl+g"], "command": "find_under_expand" },
-	//{ "keys": ["super+d"], "command": "duplicate_line" },
-	// { "keys": ["ctrl+d"], "command": "duplicate_line" },
 	{ "keys": ["ctrl+'"], "command": "toggle_comment", "args": { "block": false } },
-	{ "keys": ["ctrl+ç"], "command": "toggle_comment", "args": { "block": false } },
-	{ "keys": ["alt+ç"], "command": "toggle_comment", "args": { "block": true } },
-	{ "keys": ["super+ç"], "command": "toggle_comment", "args": { "block": false } },
 	//{ "keys": ["ctrl+q"], "command": "exit" },
-
-	//{ "keys": ["alt+p"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
-	//{ "keys": ["alt+n"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
-	//{ "keys": ["ctrl+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
-	//{ "keys": ["ctrl+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
 	
 	// Vintageous: jj sale de insert
 	//{ "keys": ["j", "j"], "command": "_enter_normal_mode", "args": {"mode": "mode_insert"}, "context": [{"key": "vi_insert_mode_aware"}] },
-	//{ "keys": ["ctrl+j"], "command": "_enter_normal_mode", "args": {"mode": "mode_insert"}, "context": [{"key": "vi_insert_mode_aware"}] }
 	
 	//Vintage 
 	{ "keys": ["j", "j"], "command": "exit_insert_mode",
@@ -101,7 +86,14 @@
 		{ "key": "setting.is_widget", "operand": false }
 	]
 	},
-	{ "keys": [",", "c","i"], "command": "toggle_comment", "args": { "block": false },
+	{ "keys": [",", "c", "i"], "command": "toggle_comment", "args": { "block": false },
+	"context":
+	[
+		{ "key": "setting.command_mode", "operand": true },
+		{ "key": "setting.is_widget", "operand": false }
+	]
+	},
+	{ "keys": [",", ",", "q"], "command": "exit",
 	"context":
 	[
 		{ "key": "setting.command_mode", "operand": true },
