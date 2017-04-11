@@ -100,4 +100,32 @@
 		{ "key": "setting.is_widget", "operand": false }
 	]
 	},
+	{ "keys": [",", ",", "w"], "command": "ace_jump_within_line",
+	"context":
+	[
+		{ "key": "setting.command_mode", "operand": true },
+		{ "key": "setting.is_widget", "operand": false }
+	]
+	},
+	{ "keys": [",", ",", "j"], "command": "ace_jump_line",
+	"context":
+	[
+		{ "key": "setting.command_mode", "operand": true },
+		{ "key": "setting.is_widget", "operand": false }
+	]
+	},
+	{ "keys": [",", ",", "k"], "command": "ace_jump_line",
+	"context":
+	[
+		{ "key": "setting.command_mode", "operand": true },
+		{ "key": "setting.is_widget", "operand": false }
+	]
+	},
+	{ "keys": [",", ",", "f"], "command": "ace_jump_char",
+	"context":
+	[
+		{ "key": "setting.command_mode", "operand": true },
+		{ "key": "setting.is_widget", "operand": false }
+	]
+	},
 ]
