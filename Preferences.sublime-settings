@@ -1,7 +1,6 @@
 {
 	"color_scheme": "Packages/Monokai Extended/Monokai Extended Bright.tmTheme",
 	"font_size": 17,
-    "tab_size": 2,
 	"ignored_packages":
 	[
 		"MarkdownEditing",
@@ -10,10 +9,8 @@
 	],
 	"save_on_focus_lost": true,
 	"sbp_active_mark_mode": true,
-	"vintage_use_clipboard": true,	
+	"tab_size": 2,
 	"vintage_ctrl_keys": true,
 	"vintage_start_in_command_mode": true,
-	//"vintageous_reset_mode_when_switching_tabs": true,
-	//"vintageous_use_ctrl_keys": true,
-	//"vintageous_use_sys_clipboard": true
+	"vintage_use_clipboard": true
 }

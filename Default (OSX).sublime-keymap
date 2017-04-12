@@ -142,4 +142,11 @@
 		{ "key": "setting.is_widget", "operand": false }
 	]
 	},
+	{ "keys": [",", "v"], "command": "toggle_setting", "args": {"setting": "word_wrap"},
+	"context":
+	[
+		{ "key": "setting.command_mode", "operand": true },
+		{ "key": "setting.is_widget", "operand": false }
+	]
+	},
 ]
